@@ -115,7 +115,7 @@ for i in range (0,len(directory_contents)):
             #print(right_thumb_x)
             #print(right_thumb_y)
             top_list.append([directory_contents[i], class_name[j], left_shoulder_x,left_shoulder_y,right_shoulder_x,right_shoulder_y,left_elbow_x,left_elbow_y,right_elbow_x,right_elbow_y,left_wrist_x,left_wrist_y,right_wrist_x,right_wrist_y,left_pinky_x,left_pinky_y,right_pinky_x,right_pinky_y,left_index_x,left_index_y,right_index_x,right_index_y,left_thumb_x,left_thumb_y,right_thumb_x,right_thumb_y]) 
-        with open(r'/mnt/fs/ayala/ayala_034.csv', 'a',newline='') as f:
+        with open(r'/mnt/fs/ayala/ayala_0002.csv', 'a',newline='') as f:
             top_list = np.array(top_list)
             top_list=top_list.ravel()
             writer_obj = writer(f, delimiter = ',')
