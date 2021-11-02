@@ -20,7 +20,7 @@ from mediapipe.python.solutions import pose as mp_pose
 
 
 import os
-path = '/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/segmented_dataset/Ayala_augs_0000/'
+path = '/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/segmented_dataset/Ayala_augs_0001/'
 #The immediate file path
 
 directory_contents = os.listdir(path)
@@ -50,7 +50,7 @@ for i in range (0,len(directory_contents)):
             input_frame = cv2.imread(path+'/'+directory_contents[i]+'/'+class_name[j]+'/'+img_name[k])
             
             #print(input_frame)
-            with mp_pose.Pose(static_image_mode=True,min_detection_confidence=0.4,model_complexity=1) as pose:
+            with mp_pose.Pose(static_image_mode=True,min_detection_confidence=0.6,model_complexity=1) as pose:
                 pose_result = pose.process(image=input_frame)
                 pose_landmarks = pose_result.pose_landmarks
 
