@@ -19,12 +19,12 @@ from mediapipe.python.solutions import hands as mp_hands
 # In[ ]:
 
 
-path = '/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/segmented_dataset/Arya_chudidhar_augs_0000/'
+path = '/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/segmented_dataset/Ayala_augs_0001/'
 #The immediate file path
 
 directory_contents = os.listdir(path)
 print(directory_contents)
-dest='/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/Arya_chudi_missing/Arya_chudidhar_0000/'
+dest='/mnt/fs/Synthetic_dataset_creation/Absdiff_dataset/Datasets/Absdiff_base_dir/Ayala_missing/Ayala_0001/'
 
 
 # In[ ]:
