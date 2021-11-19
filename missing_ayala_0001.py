@@ -231,5 +231,5 @@ for i in range (0,len(directory_contents)):
                     pinky_tip_x = hand_landmark.landmark[20].x
                     pinky_tip_y = hand_landmark.landmark[20].y
                     
-print("$$$Done With Arya_chudidhar_0000")
+print("$$$Done With Ayala_0001")
 
